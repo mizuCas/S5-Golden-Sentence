@@ -1,0 +1,22 @@
+{
+  "manifest_version": 3,
+  "name": "网页金句",
+  "version": "1.0",
+  "description": "将网页文字转换为精美图片的Chrome扩展",
+  "icons": {
+    "16": "assets/icons/icon16.png",
+    "48": "assets/icons/icon48.png",
+    "128": "assets/icons/icon128.png"
+  },
+  "action": {
+    "default_popup": "popup/popup.html",
+    "default_icon": {
+      "16": "assets/icons/icon16.png",
+      "48": "assets/icons/icon48.png",
+      "128": "assets/icons/icon128.png"
+    }
+  },
+  "permissions": [
+    "clipboardRead"
+  ]
+}

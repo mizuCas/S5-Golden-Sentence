@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>网页金句</title>
+    <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+    <div class="container">
+        <textarea id="textInput" placeholder="在此粘贴文字内容..."></textarea>
+        
+        <div class="style-settings">
+            <div class="setting-group">
+                <label>字体大小：</label>
+                <input type="range" id="fontSize" min="16" max="36" value="24">
+                <span id="fontSizeValue">24px</span>
+            </div>
+            
+            <div class="setting-group">
+                <label>文字颜色：</label>
+                <input type="color" id="textColor" value="#000000">
+            </div>
+            
+            <div class="setting-group">
+                <label>背景颜色：</label>
+                <div class="color-presets">
+                    <button class="color-preset" data-color="#FFFFFF" style="background-color: #FFFFFF;"></button>
+                    <button class="color-preset" data-color="#F5F5F5" style="background-color: #F5F5F5;"></button>
+                    <button class="color-preset" data-color="#FFE4E1" style="background-color: #FFE4E1;"></button>
+                    <button class="color-preset" data-color="#E6F3FF" style="background-color: #E6F3FF;"></button>
+                    <button class="color-preset" data-color="#F0FFF0" style="background-color: #F0FFF0;"></button>
+                </div>
+            </div>
+        </div>
+        
+        <button id="generateBtn">生成图片</button>
+        <canvas id="canvas" style="display: none;"></canvas>
+    </div>
+    <script src="popup.js"></script>
+</body>
+</html>
